@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+    <title>Blue Plastic - The solution for global pollution from plastic.</title>
+
+
+
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+
+    <link href="style.css" rel="stylesheet">
+
+
+    <link href="responsive.css" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+   
+
+    <header class="header_area animated">
+
+        <div class="container-fluid">
+
+            <div class="row align-items-center">
+
+                <div class="col-12 col-lg-10">
+
+                    <div  class="menu_area">
+
+                        <nav class="navbar navbar-expand-lg navbar-light">
+
+                            <a class="navbar-brand" href="#"><img class="imgLogo" src="../img/logo/logoWhite.png"></a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                            <div class="collapse navbar-collapse" id="ca-navbar">
+
+                                <ul class="navbar-nav ml-auto" id="nav">
+
+                             
+                                    <li class="nav-item active"><a class="nav-link" href="../index">Home</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" href="#about">Purpose</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" href="#features">Functionality</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" href="#degrade">Degradation</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" href="#leaderboard">Leaderboard</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" href="#mapings">Map</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+
+                                </ul>
+
+                               
+
+                            </div>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="wellcome_area clearfix" id="station">
+
+        <div class="container h-100">
+
+            <div class="row h-100 align-items-center">
+
+                <div class="col-12 col-md">
+
+              <div class="video-area" style="background-image: url(img/bg-img/video.jpg);">
+
+                <div id="question1" style="display: block" data-aos="fade-up">
+                     <div class="section-heading text-center question1 header">
+                        <h2>Did you finish with the collecting?</h2>
+                        <div class="line-shape"></div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-lg btn-block btnQuestion">Yes</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block btnQuestion">No</button>
+                </div>
+
+
+                <div id="question2" style="display: none" data-aos="fade-down">
+                     <div class="section-heading text-center question1 header">
+                        <h2>Was the region very polluted?</h2>
+                        <div class="line-shape"></div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-lg btn-block btnQuestionReward">Yes</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block btnQuestionReward">No</button>
+                </div>
+
+                 <div id="reward" style="display: none;" data-aos="fade-down">
+                     <div class="section-heading text-center question1 header">
+                        <h2>Collect</br> your reward :)!</h2>
+                        <div class="line-shape"></div>
+                        <img src="core-img/qr-text.png">
+                    </div>
+
+                    
+                </div>
+
+
+             </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+   
+
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAZHyUimK0lsskSx5e2Hrbvvhum_LGwB4&callback=initMap"
+                        async defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Jquery-2.2.4 JS -->
+    <script src="../js/jquery-2.2.4.min.js"></script>
+
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="../js/bootstrap.min.js"></script>
+  
+    <script>
+    $(function () {
+        $('.btnQuestion').click(function () {
+            $('#question1').css("display", "none");
+            $('#question2').css("display", "block");
+        });
+
+     $('.btnQuestionReward').click(function () {
+            $('#question2').css("display", "none");
+            $('#reward').css("display", "block");
+        });
+    })
+</script>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+
+
+</html>
+
+
